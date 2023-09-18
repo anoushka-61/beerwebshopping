@@ -1,0 +1,112 @@
+/* ProductListing.css */
+.product-listing {
+    text-align: center;
+  }
+  
+  .beer-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    
+  }
+  
+  .beer-card {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid skyblue;
+    border-radius: 8px;
+    margin-top: 10%;
+  }
+  
+  .beer-card-image {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .beer-card-image img {
+    max-width: 100%;
+    max-height: 150px; /* Adjust the maximum height as needed */
+    margin-bottom: 10px;
+  }
+  
+  .beer-card-details {
+    flex: 1;
+  }
+  
+  @media  screen and (max-width: 1024px){
+    .beer-cards {
+      /* display: grid;
+      grid-template-columns: repeat(4, 1fr); Set the number of rows */
+      display: flex;
+      flex-direction: column ;
+      gap: 20px;
+      grid-auto-flow: column; /* Display items in rows */
+    }
+    .beer-card {/* ProductListing.css */
+      .product-listing {
+        text-align: center;
+      }
+      
+      .beer-cards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+      }
+      
+      .beer-card {
+        background-color: #fff;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        border: 3px solid skyblue;
+        border-radius: 8px;
+        margin-top: 10%;
+      }
+      
+      .beer-card-image {
+        flex: 1;
+        text-align: center;
+      }
+      
+      .beer-card-image img {
+        max-width: 100%;
+        max-height: 150px; /* Adjust the maximum height as needed */
+        margin-bottom: 10px;
+      }
+      
+      .beer-card-details {
+        flex: 1;
+      }
+      
+      @media screen and (max-width: 1024px) {
+        .beer-cards{
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          gap:40px;
+            
+          
+        }
+      
+        .beer-card {
+          margin-top: 20px; 
+          
+        }
+      }
+      
+    
+    }
+    
+    
+  }
